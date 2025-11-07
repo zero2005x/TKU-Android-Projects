@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- =========== 匯率換算介面1 =========== -->
+    <TextView
+        android:id="@+id/exchangeText_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exchange" />
+
+    <EditText
+        android:id="@+id/exchange1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/exchangeText_1"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/dollarText_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/exchange1"
+        android:text="@string/us" />
+
+    <EditText
+        android:id="@+id/usDollorEditText_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dollarText_1"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/newTaiwanDollorText_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/usDollorEditText_1"
+
+        android:text="@string/ntd" />
+
+    <EditText
+        android:id="@+id/edtNTD1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/newTaiwanDollorText_1"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/btnUS2NT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchange1"
+        android:text="@string/u2d" />
+
+    <Button
+        android:id="@+id/btnNT2US1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchange1"
+        android:layout_toRightOf="@+id/btnUS2NT1"
+        android:text="@string/d2u" />
+
+    <Button
+        android:id="@+id/btnClear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchange1"
+        android:layout_toRightOf="@+id/btnNT2US1"
+        android:text="@string/clear" />
+
+    <Button
+        android:id="@+id/btnExit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchange1"
+        android:layout_toRightOf="@+id/btnClear1"
+        android:text="@string/exit" />
+
+
+    <!-- =========== 匯率換算介面2 =========== -->
+
+    <LinearLayout
+        android:id="@+id/exchangeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUS2NT1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/exchangeText_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/exchange" />
+
+            <EditText
+                android:id="@+id/exchange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:ems="4"
+                android:inputType="numberDecimal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/dollarText_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:text="@string/us" />
+
+            <EditText
+                android:id="@+id/edtUSD2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:ems="4"
+                android:inputType="numberDecimal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/newTaiwanDollorText_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:text="@string/ntd" />
+
+            <EditText
+                android:id="@+id/edtNTD2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:ems="4"
+                android:inputType="numberDecimal"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUS2NT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/u2d" />
+
+            <Button
+                android:id="@+id/btnNT2US2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/d2u" />
+
+            <Button
+                android:id="@+id/btnClear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/clear" />
+
+            <Button
+                android:id="@+id/btnExit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/exit" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchangeLinearLayout"
+        android:text="@string/hi" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchangeLinearLayout"
+        android:layout_toRightOf="@+id/heightText"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:hint="@string/hiht"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchangeLinearLayout"
+        android:layout_toRightOf="@+id/heightEditText"
+        android:text="@string/we" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchangeLinearLayout"
+        android:layout_toRightOf="@+id/weightText"
+        android:ems="4"
+        android:hint="@string/weht"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnCalculateBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exchangeLinearLayout"
+        android:layout_toRightOf="@+id/weightEditText"
+        android:text="@string/com" />
+
+    <!-- =========== BMI 計算介面 =========== -->
+
+</RelativeLayout>

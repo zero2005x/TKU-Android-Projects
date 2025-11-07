@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My first Java APP</string>
+    <string name="name">Name</string>
+    <string name="tel">Telephone</string>
+    <string name="mail">E_Mail</string>
+    <string name="web">Web</string>
+    <string name="myName">Wayne Lin</string>
+    <string name="myTel">0936123456</string>
+    <string name="myMail">wayne@takming.edu.tw</string>
+    <string name="myWeb">http://wayne.cif.takming.edu.tw</string>
+    <string name="sure">sure</string>
+    <string name="exit">exit</string>
+</resources>

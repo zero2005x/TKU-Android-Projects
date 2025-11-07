@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My first Java APP</string>
+    <string name="exchange">Exchange</string>
+    <string name="us">USD</string>
+    <string name="ntd">NTD</string>
+    <string name="u2d">USD2NTD</string>
+    <string name="d2u">NTD2US</string>
+    <string name="clear">clear</string>
+    <string name="exit">exit</string>
+    <string name="missingError">missingError</string>
+    <string name="hi">Height(cm)</string>
+    <string name="hiht">Input Height(Centimeter)</string>
+    <string name="we">Weight(kg)</string>
+    <string name="weht">Input Weight(Kilogram)</string>
+    <string name="com">Compute BMI</string>
+</resources>

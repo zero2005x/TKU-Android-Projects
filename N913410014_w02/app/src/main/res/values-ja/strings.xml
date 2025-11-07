@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">N913410014_w02</string>
+    <string name="prm">こんにちは世界！</string>
+    <string name="prm2">こんにちはウェイン！</string>
+    <string name="name">名前:</string>
+    <string name="tel">電話番号:</string>
+    <string name="ht">入力情報:</string>
+    <string name="size">フォントサイズ:</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My first Java APP</string>
+    <string name="clear">clear</string>
+    <string name="cls">clear</string>
+    <string name="ex">exit</string>
+    <string name="exit">exit</string>
+    <string name="err">Missing Field!</string>
+    <string name="missingError">missingError</string>
+    <string name="hi">Height(M)</string>
+    <string name="hiht">Input Height(CenterMeter)</string>
+    <string name="we">Weight(Kg)</string>
+    <string name="weht">Input Weight(Kg)</string>
+    <string name="com">Compute BMI</string>
+</resources>

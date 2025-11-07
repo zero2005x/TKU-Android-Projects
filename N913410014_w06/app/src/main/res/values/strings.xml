@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My first Java APP</string>
+    <string name="red">red value:</string>
+    <string name="green">green value:</string>
+    <string name="blue">blue value:</string>
+    <string name="color">color value:</string>
+    <string name="auto">auto change</string>
+    <string name="manual">manual change</string>
+    <string name="err">color err</string>
+</resources>

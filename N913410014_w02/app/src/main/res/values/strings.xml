@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">N913410014_w02</string>
+    <string name="prm">Hello Word!</string>
+    <string name="prm2">Hello Wayne!</string>
+    <string name="name">Name:</string>
+    <string name="tel">Telephone:</string>
+    <string name="ht">Input data:</string>
+    <string name="size">Font size:</string>
+</resources>

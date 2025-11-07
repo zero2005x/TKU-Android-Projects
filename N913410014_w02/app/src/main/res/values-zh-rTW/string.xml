@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">N913410014_w02</string>
+    <string name="prm">哈囉世界!</string>
+    <string name="prm2">哈囉偉恩!</string>
+    <string name="name">姓名:</string>
+    <string name="tel">電話:</string>
+    <string name="ht">輸入資料:</string>
+    <string name="size">字體大小：</string>
+</resources>

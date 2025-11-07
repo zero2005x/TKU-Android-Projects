@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">我的第一個 Java APP</string>
+    <string name="name">姓名</string>
+    <string name="tel">電話</string>
+    <string name="mail">電子郵件</string>
+    <string name="web">網站</string>
+    <string name="myName">林偉川</string>
+    <string name="myTel">0936123456</string>
+    <string name="myMail">wayne@takming.edu.tw</string>
+    <string name="myWeb">http://wayne.cif.takming.edu.tw</string>
+    <string name="sure">確定</string>
+    <string name="exit">離開</string>
+</resources>

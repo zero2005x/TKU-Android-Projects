@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">我的第一支大陸應用程式</string>
+    <string name="red">紅色強度:</string>
+    <string name="green">綠色強度:</string>
+    <string name="blue">藍色強度:</string>
+    <string name="color">顏色強度:</string>
+    <string name="auto">自動變色</string>
+    <string name="manual">手動變色</string>
+    <string name="err">顏色錯誤</string>
+</resources>

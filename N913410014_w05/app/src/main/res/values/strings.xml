@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My first Java APP</string>
+    <string name="clear">clear</string>
+    <string name="cls">clear</string>
+    <string name="ex">exit</string>
+    <string name="exit">exit</string>
+
+    <string name="err">Please enter your height and weight!</string>
+    <string name="err_height_zero">Height cannot be zero!</string>
+    <string name="err_invalid_input">Please enter a valid number!</string>
+
+    <string name="hi">Height (cm)</string>
+    <string name="hiht">Please enter your height (cm)</string>
+    <string name="we">Weight (kg)</string>
+    <string name="weht">Please enter your weight (kg)</string>
+    <string name="com">Calculate BMI</string>
+    <string name="res">Calculation result</string>
+    <string name="resht">resht</string>
+   
+    <string name="bmi_result_format">Your BMI is %1$.1f, which is considered %2$s.</string>
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal">Healthy body position</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_mild_obesity">Mild obesity</string>
+    <string name="bmi_moderate_obesity">Moderate obesity</string>
+    <string name="bmi_severe_obesity">Severe obesity</string>
+
+</resources>

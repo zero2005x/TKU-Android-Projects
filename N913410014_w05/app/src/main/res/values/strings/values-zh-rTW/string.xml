@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">我的第一個 Java 應用程式</string>
+    <string name="cls">清除</string>
+    <string name="clear">清除</string>
+    <string name="ex">離開</string>
+    <string name="err">有欄位沒有輸入!</string>
+    <string name="exit">離開</string>
+    <string name="missingError">遺失輸入</string>
+    <string name="hi">身高(公分)</string>
+    <string name="hiht">輸入身高(公分)</string>
+    <string name="we">體重(公斤)</string>
+    <string name="weht">輸入體重(公斤)</string>
+    <string name="com">計算BMI</string>
+</resources>
