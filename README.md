@@ -186,6 +186,39 @@
 
 ---
 
+### Week 10 - 圖片與文字互動應用
+
+**專案名稱：** `N913410014_w10`
+
+**功能：**
+
+- 圖片點擊顯示食物名稱（Coffee、French Fry、Hamburger、Soft Drink、Soup）
+- 姓名輸入與性別選擇（Mr/Mrs 問候語）
+- 字體樣式切換（Normal、Bold、Italic、Bold Italic）
+- RadioGroup 與 EditText 整合應用
+
+**MVVM 架構：**
+
+```
+├── model/
+│   ├── FoodItem.java              # 食物項目資料模型
+│   ├── UserInfo.java              # 使用者資訊資料模型
+│   └── FontStyle.java             # 字體樣式資料模型
+├── viewmodel/
+│   └── MainViewModel.java         # 主要業務邏輯
+└── MainActivity.java              # View 層 - 多功能互動
+```
+
+**學習重點：**
+
+- 複雜 UI 互動處理
+- RadioGroup 與監聽器
+- 多資料模型協作
+- 字體樣式動態切換
+- 使用者輸入驗證
+
+---
+
 ### 其他專案
 
 - **N931410014_w01_java** - Week 01 基礎練習 (Java)
@@ -357,6 +390,7 @@ cd TKU-Android-Projects
 4. **Week 05** - 動態 UI 生成
 5. **Week 06** - 狀態管理與顏色處理
 6. **Week 07** - 觸控事件處理
+7. **Week 10** - 圖片與文字互動應用
 
 ---
 

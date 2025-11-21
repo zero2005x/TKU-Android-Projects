@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <ImageView
+        android:id="@+id/coffeeImageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@+id/res"
+        app:srcCompat="@drawable/coffee" />
+
+    <ImageView
+        android:id="@+id/frenchFryImageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@+id/res"
+        android:layout_toRightOf="@+id/coffeeImageView"
+        app:srcCompat="@drawable/frenchfry" />
+
+    <ImageView
+        android:id="@+id/hamburgerImageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_toRightOf="@+id/frenchFryImageView"
+        android:layout_below="@+id/res"
+        app:srcCompat="@drawable/hamburger" />
+
+    <ImageView
+        android:id="@+id/softDrinkImageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_toRightOf="@+id/hamburgerImageView"
+        android:layout_below="@+id/res"
+        app:srcCompat="@drawable/softdrink" />
+
+    <ImageView
+        android:id="@+id/soupImageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@+id/coffeeImageView"
+        app:srcCompat="@drawable/soup" />
+
+    <TextView
+        android:id="@+id/enterNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="italic|bold"
+        android:layout_toRightOf="@+id/soupImageView"
+        android:layout_below="@+id/coffeeImageView"
+        android:text="Enter Name:" />
+    <EditText
+        android:id="@+id/enterNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:layout_toRightOf="@+id/enterNameTextView"
+        android:layout_below="@+id/coffeeImageView"
+        />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coffeeImageView"
+        android:layout_toRightOf="@+id/enterNameEditText"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Men" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Women" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/fontStyleTextView"
+        android:layout_below="@id/soupImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="italic|bold"
+        android:text="Font Style" />
+
+    <RadioGroup
+        android:id="@+id/fontStyleRadioGroup"
+        android:layout_toRightOf="@+id/fontStyleTextView"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soupImageView">
+
+        <RadioButton
+            android:id="@+id/boldRadioButton"
+            android:layout_below="@id/soupImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bold" />
+
+        <RadioButton
+            android:id="@+id/italicRadioButton"
+            android:layout_toRightOf="@+id/boldRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="italic" />
+
+        <RadioButton
+            android:id="@+id/boldItalicRadioButton"
+            android:layout_toRightOf="@+id/italicRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="boldItalic" />
+        <RadioButton
+            android:id="@+id/normalRadioButton"
+            android:layout_toRightOf="@+id/boldRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="normal" />
+    </RadioGroup>
+
+
+</RelativeLayout>
