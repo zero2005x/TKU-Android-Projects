@@ -1,5 +1,7 @@
 package com.liangtinglin.n913410014_w10.viewmodel;
 
+import android.widget.ImageView;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -51,6 +53,9 @@ public class MainViewModel extends ViewModel {
     public MainViewModel() {
         initializeFoodItems();
     }
+
+
+
 
     /**
      * 初始化食物項目列表

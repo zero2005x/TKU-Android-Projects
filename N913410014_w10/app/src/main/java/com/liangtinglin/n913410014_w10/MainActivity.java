@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup genderRadioGroup;
     private RadioGroup fontStyleRadioGroup;
 
+    private ImageView currentClickedImageView;
+
     // ViewModel
     private MainViewModel viewModel;
 
@@ -74,10 +76,11 @@ public class MainActivity extends AppCompatActivity {
      * 綁定 UI 元件
      */
     private void setupViews() {
-        displayTextView = findViewById(R.id.res);
+        displayTextView = findViewById(R.id.resultTextView);
         nameEditText = findViewById(R.id.enterNameEditText);
         genderRadioGroup = findViewById(R.id.genderRadioGroup);
         fontStyleRadioGroup = findViewById(R.id.fontStyleRadioGroup);
+        currentClickedImageView = findViewById(R.id.currentClickedImageView);
 
         // 設定性別選擇監聽器
         genderRadioGroup.setOnCheckedChangeListener((group, checkedId) -> {
@@ -116,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
         // 觀察選擇的圖片資源 ID
         viewModel.getSelectedImageResId().observe(this, resId -> {
             if (resId != null) {
-                // 可以在這裡處理圖片變化，目前不需要額外處理
+                ImageView currentClickedImageView = findViewById(R.id.currentClickedImageView);
+                currentClickedImageView.setImageResource(resId);
             }
         });
 
