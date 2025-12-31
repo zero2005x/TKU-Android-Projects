@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res"
+        android:text="顏色變化" />
+
+    <SeekBar
+        android:id="@+id/s_red"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:min="0"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/s_green"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_red"
+        android:min="0"
+        android:max="255" />
+
+    <SeekBar
+        android:id="@+id/s_blue"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_green"
+        android:min="0"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_blue"
+        android:text="紅色" />
+
+    <EditText
+        android:id="@+id/ed_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_blue"
+        android:layout_toRightOf="@id/textView3"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_blue"
+        android:layout_toRightOf="@id/ed_red"
+        android:text="綠色" />
+
+    <EditText
+        android:id="@+id/ed_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_blue"
+        android:layout_toRightOf="@id/textView4"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_blue"
+        android:layout_toRightOf="@id/ed_green"
+        android:text="藍色" />
+
+    <EditText
+        android:id="@+id/ed_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_blue"
+        android:layout_toRightOf="@id/textView5"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_blue"
+        android:layout_toRightOf="@id/ed_blue"
+        android:text="手動變化" />
+
+    <TextView
+        android:id="@+id/tv_r"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:text="紅色：" />
+
+    <TextView
+        android:id="@+id/tv_g"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/tv_r"
+        android:text="綠色：" />
+
+    <TextView
+        android:id="@+id/tv_b"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/tv_g"
+        android:text="藍色：" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@id/tv_b"
+        android:text="自動變色" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="200sp"
+        android:max="100"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b2"/>
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b2"
+        android:layout_toRightOf="@+id/pb"
+        android:text="啟動"
+        />
+
+    <TextView
+        android:id="@+id/tv_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/b3"
+        android:text="輸入網址: "/>
+    <EditText
+        android:id="@+id/ed_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:layout_below="@+id/b3"
+        android:layout_toRightOf="@+id/tv_web"/>
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b3"
+        android:layout_toRightOf="@+id/ed_web"
+        android:text="開網頁"/>
+
+    <WebView
+        android:id="@+id/wv1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/b4"/>
+
+    <WebView
+        android:id="@+id/wv2"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_below="@+id/wv1"
+        />
+
+    <com.liangtinglin.n913410014_w14.gem
+        android:id="@+id/def"
+        android:layout_below="@+id/wv2"
+        android:layout_width="350sp"
+        android:layout_height="320sp"/>
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wv2"
+        android:layout_toRightOf="@+id/def"
+        android:text="變色"/>
+
+
+</RelativeLayout>

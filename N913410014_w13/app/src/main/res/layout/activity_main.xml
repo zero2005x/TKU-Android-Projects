@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/res"
+        android:text="Hello World!"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/ed_n"
+        android:ems="5"
+        android:text="1.0"
+        android:layout_below="@+id/res"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/res"
+        android:layout_toRightOf="@+id/ed_n"
+        android:id="@+id/rg1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ra_man"
+            android:checked="true"
+            android:text="男"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ra_wom"
+            android:text="女"/>
+
+    </RadioGroup>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tg"
+        android:layout_toRightOf="@+id/rg1"
+        android:layout_below="@+id/res"
+        android:text="男"
+        android:textOn="男"
+        android:textOff="女"
+        android:checked="true"/>
+
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tg"
+        android:layout_below="@+id/res"
+        android:showText="true"
+        android:textOn="男"
+        android:textOff="女"
+        android:checked="true"/>
+
+    <RatingBar
+        android:id="@+id/rBar"
+        android:layout_width="230sp"
+        android:layout_height="wrap_content"
+        android:numStars="6"
+        android:layout_below="@+id/ed_n"
+        android:rating="1"
+        android:stepSize="0.5"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:layout_below="@+id/ed_n"
+        android:text="評分"
+        android:layout_toRightOf="@id/rBar"/>
+
+    <NumberPicker
+        android:layout_width="50sp"
+        android:layout_height="100sp"
+        android:id="@+id/np"
+        android:layout_below="@id/ed_n"
+        android:layout_toRightOf="@id/b1"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/np"
+
+        android:max="6"
+        android:min="0"
+        android:progress="1"/>
+
+    <SeekBar
+        android:id="@+id/s_red"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="255"
+        android:progress="0"
+        android:layout_below="@+id/seekBar"/>
+
+    <SeekBar
+        android:id="@+id/s_green"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="255"
+        android:progress="0"
+        android:layout_below="@+id/s_red"/>
+
+    <SeekBar
+        android:id="@+id/s_blue"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="255"
+        android:progress="0"
+        android:layout_below="@+id/s_green"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:id="@+id/edR"
+        android:layout_below="@+id/s_blue"
+        android:text="0"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:id="@+id/edG"
+        android:layout_below="@+id/s_blue"
+        android:layout_toRightOf="@id/edR"
+        android:text="0"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:id="@+id/edB"
+        android:layout_below="@+id/s_blue"
+        android:layout_toRightOf="@id/edG"
+        android:text="0"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:layout_below="@+id/s_blue"
+        android:layout_toRightOf="@id/edB"
+        android:text="設定"/>
+
+
+
+</RelativeLayout>

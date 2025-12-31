@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結果 : "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res"
+        android:text="確定" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res"
+        android:layout_toRightOf="@id/b1"
+        android:text="清除" />
+
+
+    <ImageButton
+        android:id="@+id/ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res"
+        android:layout_toRightOf="@+id/b2"
+        android:background="#00000000"
+        android:clickable="true"
+        android:src="@drawable/state" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ch_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="咖啡" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ra_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="大" />
+
+                <RadioButton
+                    android:id="@+id/ra_cm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中" />
+
+                <RadioButton
+                    android:id="@+id/ra_cs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ch_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="漢堡" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ra_hb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="大" />
+
+                <RadioButton
+                    android:id="@+id/ra_hm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中" />
+
+                <RadioButton
+                    android:id="@+id/ra_hs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ch_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="薯條" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ra_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="大" />
+
+                <RadioButton
+                    android:id="@+id/ra_fm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中" />
+
+                <RadioButton
+                    android:id="@+id/ra_fs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ch_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="汽水" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ra_sb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="大" />
+
+                <RadioButton
+                    android:id="@+id/ra_sm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中" />
+
+                <RadioButton
+                    android:id="@+id/ra_ss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mealsImageLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_c"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/coffee"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/im_h"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hamburger"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/im_f"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/frenchfry"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/im_s"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/softdrink"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/androidImageLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/android_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/android_1"/>
+            <ImageView
+                android:id="@+id/android_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/android_2"/>
+            <ImageView
+                android:id="@+id/android_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/android_3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -212,17 +212,152 @@
 **學習重點：**
 
 - 複雜 UI 互動處理
-- RadioGroup 與監聽器
+- RadioGroup 與監聯器
 - 多資料模型協作
 - 字體樣式動態切換
 - 使用者輸入驗證
 
 ---
 
+### Week 11 - 溫度轉換器與餐點訂購系統
+
+**專案名稱：** `N913410014_w11`
+
+**功能：**
+
+- 攝氏/華氏溫度雙向轉換
+- 餐點訂購系統（漢堡、薯條、湯品、咖啡、汽水）
+- 餐點大小選擇（大/中/小）
+- CheckBox 與 RadioGroup 整合應用
+
+**MVVM 架構：**
+
+```
+├── model/
+│   ├── TemperatureConversion.java # 溫度轉換資料模型
+│   ├── FoodItem.java              # 餐點項目資料模型（含 FoodType、Size 列舉）
+│   └── OrderResult.java           # 訂單結果資料模型
+├── repository/
+│   └── TemperatureRepository.java # 溫度轉換資料存取層
+├── viewmodel/
+│   └── MainViewModel.java         # 溫度轉換與訂購邏輯
+└── MainActivity.java              # View 層 - UI 互動
+```
+
+**學習重點：**
+
+- Repository 模式資料存取
+- EnumMap 類型安全映射
+- 多功能表單處理
+- LiveData 多資料流觀察
+
+---
+
+### Week 12 - 拖放式餐點訂購系統
+
+**專案名稱：** `N913410014_w12`
+
+**功能：**
+
+- 拖放操作訂購餐點（長按拖曳）
+- 餐點大小選擇（大/中/小）
+- 多種餐點類型（咖啡、漢堡、薯條、汽水）
+- CheckBox 勾選與 DragEvent 整合
+
+**MVVM 架構：**
+
+```
+├── model/
+│   ├── MenuItem.java              # 餐點項目資料模型（含價格矩陣）
+│   ├── Order.java                 # 訂單資料模型
+│   └── DragEvent.java             # 拖放事件狀態資料模型
+├── repository/
+│   └── OrderRepository.java       # 訂單資料存取層
+├── viewmodel/
+│   └── MainViewModel.java         # 訂購邏輯與拖放事件處理
+└── MainActivity.java              # View 層 - 拖放互動
+```
+
+**學習重點：**
+
+- Android 拖放（Drag & Drop）機制
+- OnLongClickListener 與 OnDragListener
+- DragEvent 狀態處理
+- 複雜 UI 互動與狀態管理
+
+---
+
+### Week 13 - 多控制項互動應用
+
+**專案名稱：** `N913410014_w13`
+
+**功能：**
+
+- RatingBar 評分功能（0-6 星）
+- NumberPicker 數字選擇器
+- SeekBar RGB 顏色選擇
+- ToggleButton 與 Switch 切換控制
+- RadioGroup 性別選擇
+
+**MVVM 架構：**
+
+```
+├── model/
+│   ├── UserProfile.java           # 使用者設定資料模型（含 Gender 列舉）
+│   ├── RatingData.java            # 評分資料模型
+│   └── RgbColor.java              # RGB 顏色資料模型
+├── viewmodel/
+│   └── MainViewModel.java         # 控制項狀態同步邏輯
+└── MainActivity.java              # View 層 - 多控制項互動
+```
+
+**學習重點：**
+
+- 多種 Android 控制項整合
+- 防止 LiveData 循環更新（isUpdatingFromViewModel）
+- 控制項狀態同步
+- 複雜表單驗證
+
+---
+
+### Week 14 - RGB 顏色選擇器與 WebView
+
+**專案名稱：** `N913410014_w14`
+
+**功能：**
+
+- SeekBar RGB 顏色即時預覽
+- 自訂 View 繪製寶石圖形（gem.java）
+- WebView 網頁瀏覽器
+- ProgressBar 背景執行進度顯示
+- Handler 執行緒處理
+
+**MVVM 架構：**
+
+```
+├── model/
+│   ├── RgbColor.java              # RGB 顏色資料模型（含隨機生成）
+│   └── ProgressData.java          # 進度資料模型
+├── viewmodel/
+│   └── MainViewModel.java         # 顏色處理與背景執行緒邏輯
+├── MainActivity.java              # View 層 - 顏色與 WebView 互動
+└── gem.java                       # 自訂 View - 寶石繪製
+```
+
+**學習重點：**
+
+- 自訂 View 繪製（onDraw）
+- Handler 與背景執行緒
+- WebView 網頁載入
+- ProgressBar 進度控制
+- LiveData 與 UI 執行緒同步
+
+---
+
 ### 其他專案
 
-- **N931410014_w01_java** - Week 01 基礎練習 (Java)
-- **N913410104_w01** - 額外練習專案 (Kotlin)
+- **N931410014_w01_java** - Week 01 基礎練習 (Java) - 未使用 MVVM
+- **N913410104_w01** - 額外練習專案 (Kotlin) - 未使用 MVVM
 
 ---
 
@@ -327,12 +462,12 @@ public class TextSizeViewModel extends ViewModel {
 ### 必要條件
 
 - **Android Studio**: Ladybug | 2024.2.1 或更新版本
-- **Gradle**: 8.7
-- **Java**: JDK 17 或更新版本
+- **Gradle**: 8.13.1
+- **Java**: JDK 11 或更新版本
 - **Android SDK**:
-  - Compile SDK: 34
-  - Min SDK: 24
-  - Target SDK: 34
+  - Compile SDK: 36
+  - Min SDK: 30
+  - Target SDK: 36
 
 ### 相依套件
 
@@ -391,6 +526,13 @@ cd TKU-Android-Projects
 5. **Week 06** - 狀態管理與顏色處理
 6. **Week 07** - 觸控事件處理
 7. **Week 10** - 圖片與文字互動應用
+
+### 高級
+
+8. **Week 11** - Repository 模式與表單處理
+9. **Week 12** - 拖放機制與進階互動
+10. **Week 13** - 多控制項狀態同步
+11. **Week 14** - 自訂 View 與背景執行緒
 
 ---
 
@@ -479,4 +621,4 @@ cd TKU-Android-Projects
 
 ---
 
-**最後更新**: 2025-11-08
+**最後更新**: 2025-12-31

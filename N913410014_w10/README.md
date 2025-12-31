@@ -338,4 +338,4 @@ public class MainActivity extends AppCompatActivity {
 
 ---
 
-**最後更新**: 2024-11-21
+**最後更新**: 2025-12-31
